@@ -1,106 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Component Library</title>
-    <!-- <style>
-        body {
-            color: blueviolet;
-        }
-    </style> -->
-    <!-- Third way of doing css -->
-    <link href="styles.css" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <h1>Rishabh's Component Library</h1>
-    <h2>This is second smaller text</h2>
-    <small>This is Relativily small text</small>
-    <hr>
-    <h2>@typography</h2>
-    <hr>
-    <h2>@container</h2>
-    <h3>Fluid container</h3>
-    <div class="container-fluid">This is a fluid container and will go till end of page</div>
-
-    <h3>Center container</h3>
-    <div class="container">This is centered container and it will go till the specified width</div>
-
-    <hr>
-
-    <h2>Links</h2>
-    <a class="link link-primary" href="http://">Primary Link</a>
-    <a class="link link-secondary" href="http://">Secondary Link</a>
-
-    <h2>@list</h2>
-
-    <h3>unordererd list</h3>
-    <ul class="list-non-bullet">
-        <li class="list-item-inline" >Item one</li>
-        <li class="list-item-inline">Item two</li>
-        <li class="list-item-inline">Item three</li>
-    </ul>
-
-    <h3>ordererd list</h3>
-    <ol>
-        <li>Item one</li>
-        <li>Item two</li>
-        <li>Item three</li>
-    </ol>
-
-    <hr>
-    
-    <h2>@Nav</h2>
-    <nav>
-        <div>iAmBrand</div>
-        <ul>
-            <li>
-                <a href="/">Home</a>
+    <nav class="navigation ">
+        <div class="nav-brand"> Rishabh Kushwaha</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">Home</a>
             </li>
-            <li>
-                <a href="/">Projects</a>
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">Projects</a>
             </li>
-            <li>
-                <a href="/">About</a>
+            <li class="list-item-inline">
+                <a  class="link" href="/blogs.html">Blogs</a>
             </li>
         </ul>
     </nav>
 
-    <hr>
-
-    <header>
-        <img src="images/hero.svg" alt="Hero image">
-        <h1>Heading inside hero</h1>
+    <header class="hero">
+        <img class="hero-image"src="images/hero.svg" alt="Hero image">
+        <h1 class="hero-heading">Rishabh a <span class="heading-jobTitle">Zoho Developer</span></h1>
     </header>
 
-
-    <hr>
-
-    <h2>@Section</h2>
-    <section>
-        <h3>white section</h3>
-        <p>This will have white background</p>
+    <section class="section ow">
+        <h1>Technologies</h1>
+        <p>I am familiar with Deluge,Php,HTML5,CSS3,Git,JavaScript,NodeJS,ReactJS</p>
     </section>
 
-    <section>
-        <h3>offwhite section</h3>
-        <p>This will have gray background</p>
+    <section class="section ">
+        <h1>Projects</h1>
+        <p>I like to showcase my work and you can see my projects <a class="link link-primary" href="http://">See Projects</a></p>
+
     </section>
 
-        <hr>
+    <section class="section ow">
+        <h1>Blogs</h1>
+        <p>I am also working on some technical and non technical blogs. I like to document my journey of learning<a class="link link-primary" href="http://">See Blog</a></p>
+    </section>
 
-        <h2>@Footer</h2>
-    <footer>
-        <div>some small heading inside header</div>
-        <ul>
-            <li>SocialOne</li>
-            <li>SocialTwo</li>
-            <li>SocialThree</li>
+    <footer class="footer">
+        <div class="footer-header">Social Presence</div>
+        <ul class="social-links">
+            <li class="list-item-inline"> <a class="link" href="https://github.com/rishabhKush" class="href">GitHub</a> </li>
+            <li class="list-item-inline"><a class="link"  href="https://www.linkedin.com/in/rishabhkushwahazoho/" class="href">LinkedIn</a></li>
+            <li class="list-item-inline"><a class="link"  href="/" class="href">Twitter</a></li>
         </ul>
     </footer>
-
+    
 </body>
-
 </html>
