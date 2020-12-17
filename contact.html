@@ -28,20 +28,30 @@
 
     <header class="hero">
         
-        <h1 class="hero-heading">MY <span class="heading-jobTitle">Projects</span></h1>
+        <h1 class="hero-heading">MY <span class="heading-jobTitle">Contact</span></h1>
 
     </header>
 
-    <ul class="list-non-bullet">
-        <li>
-            <div class="container">
-            <h1>How well do you know me?</h1>
-            <small>December, 2020</small>
-            <p>A CLI app built with <strong>nodeJS</strong></p>
-            <a class="link link-primary" href="https://repl.it/@RishabhKush/RK-quiz-1?embed=1&output=1" >Live project</a>
-            <a class="link link-primary" href="https://repl.it/@RishabhKush/RK-quiz-1#index.js" class="link">View source</a>
-        </div>
-        </li>
-    </ul>
+    <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Your Role: <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+          </select></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+      
 </body>
 </html>
